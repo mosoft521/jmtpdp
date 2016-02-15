@@ -10,7 +10,7 @@ import java.util.concurrent.Future;
 
 public class ReusableCodeExample {
 
-    public static void main(String[] args) throws InterruptedException,            ExecutionException {
+    public static void main(String[] args) throws InterruptedException, ExecutionException {
         SomeService ss = new SomeService();
         ss.init();
         Future<String> result = ss.doSomething("Serial Thread Confinement", 1);

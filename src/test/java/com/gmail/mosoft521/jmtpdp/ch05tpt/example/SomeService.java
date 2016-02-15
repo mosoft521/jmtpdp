@@ -7,7 +7,7 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
 
 public class SomeService {
-    private final BlockingQueue<String> queue = new ArrayBlockingQueue<String>(            100);
+    private final BlockingQueue<String> queue = new ArrayBlockingQueue<String>(100);
 
     private final Producer producer = new Producer();
     private final Consumer consumer = new Consumer();

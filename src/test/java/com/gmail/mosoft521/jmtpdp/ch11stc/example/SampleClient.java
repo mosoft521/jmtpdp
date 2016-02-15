@@ -6,7 +6,7 @@ public class SampleClient {
     static {
 
         //请根据实际情况修改构造器MessageFileDownloader的参数
-        DOWNLOADER = new MessageFileDownloader("/home/viscent/tmp/incoming",                "192.168.1.105", "datacenter", "abc123");
+        DOWNLOADER = new MessageFileDownloader("/home/viscent/tmp/incoming", "192.168.1.105", "datacenter", "abc123");
         DOWNLOADER.init();
     }
 

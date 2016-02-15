@@ -13,6 +13,7 @@ public class ThreadSafeCounter {
             counter++;
         }
     }
+
     public int get() {
         synchronized (this) {
             return counter;

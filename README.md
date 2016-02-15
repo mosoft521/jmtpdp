@@ -1,5 +1,5 @@
 # jmtpdp
-《Java多线程编程实战指南（设计模式篇）》源码 http://viscent.iteye.com/
+《Java多线程编程实战指南（设计模式篇）》源码(Maven版本) http://viscent.iteye.com/ 原地址:https://github.com/Viscent/javamtp
 # 《Java多线程编程实战指南（设计模式篇）》源码
 
 这是国内首部Java多线程设计模式原创作品《Java多线程编程实战指南（设计模式篇）》一书的源码。

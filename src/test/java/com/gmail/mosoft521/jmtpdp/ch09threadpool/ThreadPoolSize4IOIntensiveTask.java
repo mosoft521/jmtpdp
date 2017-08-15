@@ -18,6 +18,8 @@ public class ThreadPoolSize4IOIntensiveTask {
                 new ArrayBlockingQueue<Runnable>(200));
 
         threadPool.submit(new IOIntensiveTask());
+        threadPool.submit(new IOIntensiveTask());
+        threadPool.submit(new IOIntensiveTask());
     }
 
     // 某个I/O密集型任务
@@ -26,10 +28,23 @@ public class ThreadPoolSize4IOIntensiveTask {
         @Override
         public void run() {
             // 执行大量的I/O操作
+            // mock:
+            System.out.println("start!");
+            try {
+                Thread.sleep(3000L);
+            } catch (InterruptedException ie) {
+                System.out.println(ie.getStackTrace());
+            }
+            System.out.println("end!");
         }
     }
 }
 /*
-死锁了?
-todo:
+start!
+end!
+start!
+end!
+start!
+end!
+...
  */
